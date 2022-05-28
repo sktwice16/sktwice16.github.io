@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football League</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+   
+   <style type="text/css">
+     body{
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5),#3551b5), url(back.jpg);
+      background-size: cover;
+      background-attachment: fixed;
+     }
+
+     h2{
+      color: #ffff;
+      
+     }
+   </style>
+  </head>
+  <body style="background-color: ;">
+    <header id="header">
+          <div class="container">
+            <a href="#"><img src="logo.png" style="width: 70; height: 70px;" >
+            <nav class="main-nav">
+              <ul>
+                <li><a href=football.html>Home</a></li>
+                <li class="dropdown">
+                  <a href=About.html class="dropbtn">About</a>
+                    <div class="dropdown-content">
+                      <a href="epl.html">EPL</a>
+                      <a href="serie a.html">Serie A</a>
+                      <a href="la liga.html">La Liga</a>
+                      <a href="bundes.html">Bundesliga</a>
+                      <a href="ligue1.html">Ligue 1</a>
+                    </div>
+                  
+
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+              </ul>
+           </nav>
+           </div>
+        </header>
+        <div class="gab">
+          <h1>This is just for gab</h1>
+          <h1>This is just for gab</h1>
+        </div>
+
+        <div class="section">
+
+          <!-- Image slider start -->
+  <div class="sliding">
+
+    <div class="slides">
+      <!-- radio button start -->
+      <input type="radio" name="radio-btn" id="radio1">
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+      <input type="radio" name="radio-btn" id="radio4">
+      <input type="radio" name="radio-btn" id="radio5">
+      <!-- radio button end -->
+      <!-- slide image start -->
+      <div class="slide first">
+        <img src="epl2.jpg">
+      </div> 
+      
+      <div class="slide sec">
+        <img src="bundesliga.jpg">
+      </div> 
+      <div class="slide third">
+        <img src="laliga.jpg">
+      </div> 
+      <div class="slide forth">
+        <img src="serie.jpg">
+      </div> 
+      <div class="slide fifth">
+        <img src="ligue.jpg">
+      </div> 
+      <!-- slide image end --> 
+      <!-- automatic navigation start --> 
+      <div class="navigation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+        <div class="auto-btn4"></div>
+        <div class="auto-btn5"></div>
+      </div>
+      <!-- automatic navigation end --> 
+    </div>
+    <!-- manual navigation start --> 
+    <div class="navigation-manual">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+      <label for="radio4" class="manual-btn"></label>
+      <label for="radio5" class="manual-btn"></label>
+    </div>
+    <!-- manual navigation end --> 
+  </div>
+  <!-- Image slider end -->
+
+  <script type="text/javascript">
+    var counter =1;
+    setInterval(function () {
+      document.getElementById('radio' + counter).checked=true;
+      counter++;
+      if(counter>5){
+        counter=1;
+      }
+    }, 5000);
+
+  </script>
+  </div> 
+
+  <h2 >Choose what league you want to know</h2>
+
+  <div class="choose">
+    <div class="glass">
+        <img src="logo1.jpg" style="width:200px; height: 200px;">
+        <a href="epl.html">
+          <button class="btn"style="vertical-align:middle"><span>Click here</span></button>
+        </a>  
+    </div>
+    <div class="glass">
+      <img src="logo2.jpg" style="width:200px; height: 200px;">
+      <a href="la liga.html">
+          <button class="btn"style="vertical-align:middle"><span>Click here</span></button>
+        </a>  
+    </div>
+    <div class="glass">
+      <img src="logo3.jpg" style="width:200px; height: 200px;">
+      <a href="serie a.html">
+          <button class="btn"style="vertical-align:middle"><span>Click here</span></button>
+        </a>  
+    </div>
+    <div class="glass">
+      <img src="logo4.jpg" style="width:200px; height: 200px;">
+      <a href="ligue1.html">
+          <button class="btn"style="vertical-align:middle"><span>Click here</span></button>
+        </a>  
+    </div>
+    <div class="glass">
+      <img src="logo5.jpg" style="width:200px; height: 200px;">
+      <a href="bundes.html">
+          <button class="btn"style="vertical-align:middle"><span>Click here</span></button>
+        </a>  
+    </div>
+  </div>  
+  
+  </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <iframe width="0" height="0" src="area 21.mp3" frameborder="0" allowfullscreen></iframe>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football League</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+   
+  </head>
+  <body onload="slider()">
+    <div class="banner">
+      <div class="slider">
+        <img src="bg4.jpg" id="slide1">
+      </div>
+      <div class="overlay">
+        <div class="gab">
+          <h1>This is just for gab</h1>
+        </div>
+
+        <header id="header">
+
+          <div class="container">
+            <div class="h2">
+            <a href="#"><img src="logo.png" style="width: 70; height: 70px;right: 20;" >
+              </div>
+            <nav class="main-nav">
+              <ul>
+                <li><a href=football.html>Home</a></li>
+                <li class="dropdown">
+                  <a href=About.html class="dropbtn">About</a>
+                    <div class="dropdown-content">
+                      <a href="epl.html">EPL</a>
+                      <a href="serie a.html">Serie A</a>
+                      <a href="la liga.html">La Liga</a>
+                      <a href="bundes.html">Bundesliga</a>
+                      <a href="ligue1.html">Ligue 1</a>
+                    </div>
+                  
+
+                </li>
+                <li><a href=contact.html>Contact</a></li>
+                <li><a href=feedback.html>Feedback</a></li>
+              </ul>
+           </nav>
+           </div>
+        </header>
+       <div class="content">
+        <h1>BIG 5 FOOTBAL LEAGUE</h1>
+         <h3>The dossier presents a range of statistics and facts about the leading five football leagues in Europe, also known as the 'Big Five'. These include the Premier League in England, the Bundesliga in Germany, La Liga in Spain, Serie A in Italy and Ligue 1 in France.</h3>
+         <div>
+          <a href="about.html">
+           <button class="button">LEARN MORE</button>
+          </a> 
+         </div>
+
+
+       </div> 
+      </div>
+    </div>
+
+    <script>
+      var slide1 =document.getElementById("slide1");
+
+      var images = new Array(
+        "bg1.jpg",
+        "bg2.jpg",
+        "bg3.jpg",
+        "bg5.jpg",
+        "bg6.jpg",
+
+        );
+      var len = images.length;
+      var i=0;
+      function slider(){
+        if(i>len-1){ 
+          i=0;
+        }
+        slide1.src=images[i];
+        i++;
+        setTimeout('slider()',3000);
+      }
+    </script>
+  </body>
+</html>
